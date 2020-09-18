@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 63
+  controlID: 139
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 387
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 64
+  controlID: 91
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -610,20 +610,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Audio
+    - Assets/Models/Corridor
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Audio
+  - Assets/Models/Corridor
   m_LastFoldersGridSize: -1
   m_LastProjectPath: B:\Unity3D\LaboConjure\3D Beginner Haunted House
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 15}
-    m_SelectedIDs: 625b0000
-    m_LastClickedID: 23394
-    m_ExpandedIDs: 00000000445a000000ca9a3b
+    m_SelectedIDs: ea5b0000
+    m_LastClickedID: 23530
+    m_ExpandedIDs: 00000000485a00006c5b0000705b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -651,7 +651,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000445a0000
+    m_ExpandedIDs: 00000000485a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -776,7 +776,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 34fbffffa43a0000
+      m_ExpandedIDs: 20bcffff00000000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -836,9 +836,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.956764, y: 5.950188, z: -5.115144}
+    m_Target: {x: 1.4924229, y: -13.966418, z: 59.75392}
     speed: 2
-    m_Value: {x: -6.956764, y: 5.950188, z: -5.115144}
+    m_Value: {x: 1.4924229, y: -13.966418, z: 59.75392}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -884,13 +884,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.34335235, y: 0.29805446, z: -0.11587843, w: 0.8831182}
+    m_Target: {x: 0.109582424, y: 0.013421784, z: -0.0014387968, w: 0.9939282}
     speed: 2
-    m_Value: {x: 0.3433433, y: 0.29804662, z: -0.11587538, w: 0.88309497}
+    m_Value: {x: 0.10957556, y: 0.014912037, z: -0.0016031017, w: 0.9938654}
   m_Size:
-    m_Target: 1.8184357
+    m_Target: 25.644228
     speed: 2
-    m_Value: 1.8184357
+    m_Value: 26.852594
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -908,7 +908,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.4215119, y: 0.32534596, z: -0.16518722, w: 0.830195}
+  m_LastSceneViewRotation: {x: 0.34335235, y: 0.29805446, z: -0.11587843, w: 0.8831182}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -974,9 +974,9 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -987,7 +987,7 @@ MonoBehaviour:
       y: 21
       width: 1151
       height: 587
-    m_Scale: {x: 0.76432294, y: 0.76432294}
+    m_Scale: {x: 0.7916667, y: 0.7916666}
     m_Translation: {x: 575.5, y: 293.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -995,12 +995,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -752.954
-      y: -384
-      width: 1505.908
-      height: 768
+      x: -726.9473
+      y: -370.73685
+      width: 1453.8947
+      height: 741.4737
     m_MinimalGUI: 1
-  m_defaultScale: 0.76432294
+  m_defaultScale: 0.7916667
   m_LastWindowPixelSize: {x: 1151, y: 608}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
