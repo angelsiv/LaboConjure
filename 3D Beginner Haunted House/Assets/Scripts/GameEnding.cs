@@ -68,7 +68,11 @@ public class GameEnding : MonoBehaviour
             }
             else
             {
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#else
                 Application.Quit();
+#endif
             }
         }
 

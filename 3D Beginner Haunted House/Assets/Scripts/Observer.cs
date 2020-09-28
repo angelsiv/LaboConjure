@@ -5,7 +5,7 @@ using UnityEngine;
 public class Observer : MonoBehaviour
 {
     public Transform player;
-    bool m_IsPlayerInRange;
+    private bool m_IsPlayerInRange;
 
     public GameEnding gameEnding;
 
