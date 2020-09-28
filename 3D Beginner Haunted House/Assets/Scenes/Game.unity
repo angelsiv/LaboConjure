@@ -478,7 +478,8 @@ AudioSource:
   m_GameObject: {fileID: 196028889}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -672394256172749975, guid: 511352560f3fc9143b1e606b53656e26,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2789d5ce62baaba4ab1ee8bb172304a6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -5108,7 +5109,8 @@ AudioSource:
   m_GameObject: {fileID: 1591944007}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2758028619068720164, guid: 511352560f3fc9143b1e606b53656e26,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 205287722f2b6b64583b86d65fdeeb11, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
@@ -5372,7 +5374,8 @@ AudioSource:
   m_GameObject: {fileID: 2050179557}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -672394256172749975, guid: 511352560f3fc9143b1e606b53656e26,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c0f716a9e9ac00c438b95158ba195a58, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -5686,6 +5689,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: JohnLemon
       objectReference: {fileID: 0}
+    - target: {fileID: 5974379966845689521, guid: 333d0696fa57023478d55a8ceba7b7aa,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -672394256172749975, guid: 511352560f3fc9143b1e606b53656e26,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 333d0696fa57023478d55a8ceba7b7aa, type: 3}
 --- !u!4 &5171394375180349458 stripped

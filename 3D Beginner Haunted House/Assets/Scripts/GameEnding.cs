@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class GameEnding : MonoBehaviour
 {
-
     public float fadeDuration = 1f;
     public float displayImageDuration = 1f;
     public GameObject player;
