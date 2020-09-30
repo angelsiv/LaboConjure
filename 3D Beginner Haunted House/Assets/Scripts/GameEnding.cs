@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using System.Runtime.Hosting;
 using System.Threading;
 using UnityEngine;
 
 public class GameEnding : MonoBehaviour
 {
-    public float fadeDuration = 1f;
-    public float displayImageDuration = 1f;
+    private float fadeDuration = 1f;
+    private float displayImageDuration = 1f;
     public GameObject player;
 
     float m_Timer;
@@ -23,15 +24,26 @@ public class GameEnding : MonoBehaviour
     public AudioSource exitAudio;
     public AudioSource caughtAudio;
 
+    [SerializeField] private Button resetGameButton;
+    [SerializeField] private Button quitToMenuButton;
+
+    public void Start()
+    {
+        resetGameButton.gameObject.SetActive(false);
+        quitToMenuButton.gameObject.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         if(m_IsPlayerAtExit)
         {
-            EndLevel(exitBackgroundImageCanvasGroup, false, exitAudio);
+            EndLevel(exitBackgroundImageCanvasGroup, exitAudio);
         }
         else if(m_IsPlayerCaught)
         {
-            EndLevel(caughtBackgroundImageCanvasGroup, true, caughtAudio);
+            EndLevel(caughtBackgroundImageCanvasGroup, caughtAudio);
         }
     }
 
@@ -48,7 +60,7 @@ public class GameEnding : MonoBehaviour
         m_IsPlayerCaught = true;
     }
 
-    void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
+    void EndLevel(CanvasGroup imageCanvasGroup, AudioSource audioSource)
     {
         m_Timer += Time.deltaTime;
         imageCanvasGroup.alpha = m_Timer / fadeDuration;
@@ -61,20 +73,29 @@ public class GameEnding : MonoBehaviour
         
         if(m_Timer > fadeDuration + displayImageDuration)
         {
-            if (doRestart)
-            {
-                SceneManager.LoadScene(0);
-            }
-            else
-            {
-#if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-#else
-                Application.Quit();
-#endif
-            }
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            resetGameButton.gameObject.SetActive(true);
+            resetGameButton.enabled = true;
+            quitToMenuButton.gameObject.SetActive(true);
+            quitToMenuButton.enabled = true;
         }
-
         
+    }
+
+    //To use with the buttons
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
+    public void Retry()
+    {
+        Cursor.visible = false;
+        SceneManager.LoadScene("Game");
     }
 }
