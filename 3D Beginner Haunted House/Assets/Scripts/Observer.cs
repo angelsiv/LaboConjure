@@ -21,9 +21,24 @@ public class Observer : MonoBehaviour
             {
                 if(raycastHit.collider.transform == player)
                 {
-                    gameEnding.CaughtPlayer();
+                    if(tag == "Ghost")
+                    {
+                        GetComponentInParent<Animator>().SetBool("IsChasing", true);
+                    }
+                    else
+                    {
+                        gameEnding.CaughtPlayer();
+                    }
                 }
             }
+        }
+        else
+        {
+            if(tag == "Ghost")
+            {
+                GetComponentInParent<Animator>().SetBool("IsChasing", false);
+            }
+            
         }
     }
 

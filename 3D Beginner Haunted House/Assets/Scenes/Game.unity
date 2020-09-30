@@ -202,6 +202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1821695525}
     m_Modifications:
+    - target: {fileID: 1349148562, guid: 349447cecfc9da94bbd04abf8cd235ec, type: 3}
+      propertyPath: gameEnd
+      value: 
+      objectReference: {fileID: 569849734}
     - target: {fileID: 1371366420794327823, guid: 349447cecfc9da94bbd04abf8cd235ec,
         type: 3}
       propertyPath: m_Name
@@ -335,6 +339,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1821695525}
     m_Modifications:
+    - target: {fileID: 1349148562, guid: 349447cecfc9da94bbd04abf8cd235ec, type: 3}
+      propertyPath: gameEnd
+      value: 
+      objectReference: {fileID: 569849734}
     - target: {fileID: 1371366420794327823, guid: 349447cecfc9da94bbd04abf8cd235ec,
         type: 3}
       propertyPath: m_Name
@@ -4435,6 +4443,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1821695525}
     m_Modifications:
+    - target: {fileID: 1349148562, guid: 349447cecfc9da94bbd04abf8cd235ec, type: 3}
+      propertyPath: gameEnd
+      value: 
+      objectReference: {fileID: 569849734}
     - target: {fileID: 1371366420794327823, guid: 349447cecfc9da94bbd04abf8cd235ec,
         type: 3}
       propertyPath: m_Name
@@ -6273,6 +6285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: JohnLemon
       objectReference: {fileID: 0}
+    - target: {fileID: 5171394374030813521, guid: 333d0696fa57023478d55a8ceba7b7aa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5974379966845689521, guid: 333d0696fa57023478d55a8ceba7b7aa,
         type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -6300,6 +6317,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1821695525}
     m_Modifications:
+    - target: {fileID: 1349148562, guid: 349447cecfc9da94bbd04abf8cd235ec, type: 3}
+      propertyPath: gameEnd
+      value: 
+      objectReference: {fileID: 569849734}
     - target: {fileID: 1371366420794327823, guid: 349447cecfc9da94bbd04abf8cd235ec,
         type: 3}
       propertyPath: m_Name
@@ -6359,11 +6380,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4107198414548403993, guid: 349447cecfc9da94bbd04abf8cd235ec,
-        type: 3}
-      propertyPath: waypoints.Array.size
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4107198414548403993, guid: 349447cecfc9da94bbd04abf8cd235ec,
         type: 3}

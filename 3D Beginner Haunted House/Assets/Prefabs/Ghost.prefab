@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 7295517098546050212}
   - component: {fileID: 4107198414548403993}
   - component: {fileID: 1521885281544773076}
+  - component: {fileID: 1349148562}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -404,7 +405,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 7295517098546050212}
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &1521885281544773076
 AudioSource:
   m_ObjectHideFlags: 0
@@ -502,6 +505,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1349148562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371366420794327823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed2dbffbbd14144fa0b2a1d15965ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEnd: {fileID: 0}
 --- !u!1 &1371366420794327825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PointOfView
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059254975963816715, guid: f998da007c44e714089f3fc8db12f892,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ghost
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f998da007c44e714089f3fc8db12f892, type: 3}
