@@ -93,9 +93,16 @@ public class GameEnding : MonoBehaviour
 #endif
     }
 
+    public void ReturnToMainMenu()
+    {
+        //GameManager.Instance.SceneName = "MainMenu";
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void Retry()
     {
         Cursor.visible = false;
-        SceneManager.LoadScene("Game");
+        GameManager.Instance.SceneName = "Game";
+        SceneManager.LoadScene("Loading");
     }
 }

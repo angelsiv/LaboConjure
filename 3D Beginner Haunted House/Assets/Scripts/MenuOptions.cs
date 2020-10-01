@@ -17,13 +17,6 @@ public class MenuOptions : MonoBehaviour
     [SerializeField] private AudioMixerGroup m_MusicMixerGroup;
     [SerializeField] private AudioMixerGroup m_SfxMixerGroup;
 
-    private GameManager GameManager;
-
-    private void Awake()
-    {
-        GameManager = FindObjectOfType<GameManager>();
-    }
-
     private void Start()
     {
         if(m_OptionsCanvas)
@@ -98,7 +91,8 @@ public class MenuOptions : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        GameManager.Instance.SceneName = "Game";
+        SceneManager.LoadScene("Loading");
     }
 
     public void ExitGame()

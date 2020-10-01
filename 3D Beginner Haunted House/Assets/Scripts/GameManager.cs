@@ -8,10 +8,12 @@ public class GameManager : MonoBehaviour
     private float m_MasterSliderValue = 0.0f;
     private float m_MusicSliderValue = 0.0f;
     private float m_SfxSliderValue = 0.0f;
+    private string m_SceneName;
 
     public float MasterVolumeValue { get => m_MasterSliderValue; set => m_MasterSliderValue = value; }
     public float MusicVolumeValue { get => m_MusicSliderValue; set => m_MusicSliderValue = value; }
     public float SfxVolumeValue { get => m_SfxSliderValue; set => m_SfxSliderValue = value; }
+    public string SceneName { get => m_SceneName; set => m_SceneName = value; }
 
     #region GameManager Instance
     private static GameManager m_Instance = null;
